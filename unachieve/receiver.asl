@@ -1,5 +1,6 @@
-
--!hello(Msg) [source(Sender)].
-
-+!hello(Msg)[source(Sender)] <-
-  .print("got a message from", Sender, "saying", Msg).
++!hello <-
+  N = 0;
+  while (true) {
+    .wait(500);
+    .print(N);
+  }.

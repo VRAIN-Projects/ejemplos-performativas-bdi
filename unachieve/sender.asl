@@ -1,14 +1,14 @@
 !start.
 
 +!start <-
-  .print("about to broadcast ...");
-  .broadcast(achieve, hello(42));
-  .print("broadcasted.");
-
-  .print("deleting achievent ...");
-  .send(receiver, unachieve, hello(_));
-  .print("deleted.");
-
-  .print("sending individual message ...");
-  .send(receiver, achieve, hello(23));
-  .print("sent.").
+  .print("start achievement ...");
+  .send(receiver, achieve, hello);
+  .print("started.");
+  .wait(3000);
+  .print("cancel achievent ...");
+  .send(receiver, unachieve, hello);
+  .print("cancelled.");
+  .wait(10000);
+  .print("start achievement ...");
+  .send(receiver, achieve, hello);
+  .print("started.").
