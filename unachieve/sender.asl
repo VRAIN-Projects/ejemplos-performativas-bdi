@@ -2,16 +2,13 @@
 
 +!start <-
   .print("start achievement ...");
-  .send(receiver, achieve, saludar);
+  .send(receiver, achieve, hello);
   .print("started.");
   .print("start achievement ...");
   .send(receiver, achieve, saludar);
   .print("started.");
-  .wait(3000);
+  .wait(5000);
   .print("cancel achievent ...");
   .send(receiver, unachieve, hello);
   .print("cancelled.");
-  .wait(10000);
-  .print("start achievement ...");
-  .send(receiver, achieve, hello);
-  .print("started.").
+  .wait(10000).
