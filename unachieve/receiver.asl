@@ -4,3 +4,6 @@
     .wait(500);
     .print(N);
   }.
+
++!saludar <-
+  .print("Esto es un saludo").
