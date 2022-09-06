@@ -1,13 +1,11 @@
-+!hello <-
-  N = 0;
++!hello(N) <-
   while (true) {
     .wait(300);
-    .print(N);
+    .print("Hello", N);
   }.
 
-+!saludar <-
-  N = 0;
++!saludar(N) <-
   while (true) {
     .wait(300);
-    .print("Saludo");
+    .print("Saludo", N);
   }.
