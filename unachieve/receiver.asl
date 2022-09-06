@@ -6,6 +6,12 @@
 
 +!saludar(N) <-
   while (true) {
-    .wait(300);
+    .wait(500);
     .print("Saludo", N);
+  }.
+
++!saludar(N, M) <-
+  while (true) {
+    .wait(500);
+    .print("Saludo", N, "-", M);
   }.
