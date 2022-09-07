@@ -1,8 +1,8 @@
+!start.
+
 fly(si).
 
 tochthesky(si).
-
-!start.
 
 +!start <-
   .print("show value ...");
@@ -10,7 +10,7 @@ tochthesky(si).
   .print("fly = ", N);
   .print("showed.");
   .print("get belief...");
-  .send(master, askOne, fly(M));
+  .send(sender, askOne, fly(M));
   .print("received.");
   .print("show value ...");
   ?fly(M);
