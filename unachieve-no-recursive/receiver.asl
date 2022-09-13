@@ -1,17 +1,17 @@
 +!hello(N) <-
-  .wait(300);
+  .wait(800);
   .print("Hello", N);
   !!hello(N)
 .
 
 +!saludar(N) <-
-  .wait(500);
+  .wait(800);
   .print("Saludo", N);
   !!saludar(N)
 .
 
 +!saludar(N, M) <-
-    .wait(500);
+    .wait(800);
     .print("Saludo", N, "-", M);
     !!saludar(N, M)
 .
