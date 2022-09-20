@@ -16,6 +16,6 @@
   .print("started.");
   .wait(5000);
   .print("cancel achievent ...");
-  .send(receiver, unachieve, saludar(N, M));
+  .send(receiver, unachieve, saludar(2));
   .print("cancelled.");
   .wait(5000).
