@@ -5,7 +5,7 @@
 .
 
 +!saludar(N) <-
-  .wait(400);
+  .wait(800);
   .print("Saludo", N);
   !!saludar(N)
 .
