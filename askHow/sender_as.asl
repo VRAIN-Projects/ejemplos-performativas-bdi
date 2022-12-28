@@ -2,9 +2,8 @@
 
 +!start : true
    <- 
-      ?receiver(X);
       .print("Preguntar Plan");
-      .send(X, askHow, "+!hello");
+      .send(receiver_as, askHow, "+!hello");
       .print("Plan added...");
       .wait(1000);
       !hello
