@@ -1,3 +1,3 @@
 @etiqueta2[hola(1)]
-+!hello <-
-  .print("Este es el plan").
++!hello(N) <-
+  .print("Este es el plan de", N).
