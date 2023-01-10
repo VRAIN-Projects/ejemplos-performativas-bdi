@@ -1,5 +1,7 @@
 !start.
 
+conocer(manolo).
+
 +!start : true
    <- 
       ?receiver(X);
