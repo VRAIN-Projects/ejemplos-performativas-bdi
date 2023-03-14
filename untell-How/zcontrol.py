@@ -8,13 +8,13 @@ from spade.template import Template
 from spade_bdi.bdi import BDIAgent
 
 def main(server, password):
-    b = BDIAgent("slave_1@{}".format(server), password, "slave.asl")
-    b.bdi.set_belief("master", "master@{}".format(server))
+    b = BDIAgent("receiver@{}".format(server), password, "receiver.asl")
+    b.bdi.set_belief("sender", "master@{}".format(server))
     future = b.start()
     future.result()
 
-    a = BDIAgent("master@{}".format(server), password, "master.asl")
-    a.bdi.set_belief("slave1", "slave_1@{}".format(server))
+    a = BDIAgent("sender@{}".format(server), password, "sender.asl")
+    a.bdi.set_belief("receiver", "slave_1@{}".format(server))
     future = a.start()
     future.result()
 
