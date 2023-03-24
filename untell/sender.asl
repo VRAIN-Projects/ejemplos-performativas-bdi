@@ -2,7 +2,7 @@
 
 +!start : true
    <- 
-      ?slave1(X);
+      ?receiver(X);
       .send(X,tell, nombre("Manolo"));
       .send(X, achieve, comprobar);
       .send(X, untell, nombre("Antonio"));
